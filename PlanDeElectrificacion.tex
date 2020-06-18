@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=2.5cm,top=5.5cm,right=1.5cm,bottom=2.5cm,headheight=100pt]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage{multicol}
+\usepackage{framed, color}
+\usepackage{float}
+\usepackage{ragged2e} 
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\setlength{\columnsep}{0.5cm}
+ 
+\begin{document}
+\pagestyle{fancy}
+\lhead{\raggedright\textbf{\large{Programación Avanzada (1113) - Programación III (617) UNLaM \\\textbf{\large{Instancia:}}\\\textbf{\large{Fecha:}}\\\textbf{\large{Alumnos:}}\\}}}
+\rhead{\begin{picture}(0,0) \put(-56.7,10){\includegraphics[width=19mm]{unlam}} \end{picture}}
+\lfoot{Programación Avanzada (1113)\\Programación III (617)}
+\rfoot{UNLaM}
+
+%\fancyfoot{}
+\begin{multicols}{2}[\center\textbf{\large{Plan de Electrificación\\\small{\url{http://acm.timus.ru/problem.aspx?space=1&num=1982}\\Problem Author: Mikhail Rubinchik\\ 
+Problem Source: Open Ural FU Championship 2013\\}}}]
+
+\author{}
+
+\justify
+En un lejano país hay $n$ ciudades. El gobierno ha decidido electrificar todas estas ciudades. Al principio, se construyeron centrales en $k$ ciudades diferentes. Las otras ciudades deben estar conectadas con las centrales eléctricas a través de líneas eléctricas. Para cualquier par de ciudades, es posible construir una línea de transporte de electricidad con un costo de $c_{ij}$ rublos. El país está en crisis después de una guerra civil, por lo que el gobierno decidió construir sólo unas pocas líneas eléctricas. Por supuesto de cada ciudad debe haber un camino a lo largo de las líneas a alguna ciudad con una central eléctrica. Encuentre el costo mínimo posible para construir todas las líneas eléctricas necesarias.
+\justify
+\textbf{Datos de entrada:}
+La primer linea contiene dos enteros $n$ y $k$ $(k \leq n \leq 100)$.
+La segunda linea contiene $k$ diferentes enteros que representan los números de ciudades que tienen centrales eléctricas. 
+Las siguientes $n$ lineas contienen una tabla de $n \times n$ enteros $c_{ij}$, donde: $c_{ij} >0$ si $i \not = j$ y $c_{ii} = 0$.
+\justify
+\textbf{Datos de salida:}
+Una linea indicando el costo de electrificar las ciudades.
+A continuación, $m$ lineas, donde cada una representa las lineas que componen el tendido resultante. 
+%\begin{multicols}{2}
+
+\justify
+\textbf{Ejemplo:} 
+Si su programa leyera el archivo ciudades.in siguiente:\\
+
+%\begin {centering}
+\noindent
+\fbox{\parbox[b][\height][t]{0.20\textwidth}{
+4 2\\
+1 4\\
+0 2 4 3\\
+2 0 5 2\\
+4 5 0 1\\
+3 2 1 0\\
+} }
+
+%\end {centering}
+
+\justify Debería escribir el archivo tendido.out siguiente:\\
+
+%\begin {centering}
+\noindent
+\fbox{\parbox[b][\height][t]{0.20\textwidth}{
+3\\
+2 4\\
+3 4\\}}
+
+%\end {centering}
+
+%\end{multicols}
+\end{multicols}
+%\url{http://acm.timus.ru/problem.aspx?space=1&num=1982}
+% \begin{figure}[H]
+%   \centering
+%     \includegraphics[width=\textwidth]{CasoTarzan}
+    
+%   \caption{}
+%   \label{tarzan}
+% \end{figure}
+
+% \LaTeX
+
+\end{document}
